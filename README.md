@@ -67,6 +67,13 @@ PORT    STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 1.19 seconds
 ```
 
+#### MISP Integration
+If you plan to send the results directly to a MISP instance the following assumptions are done.
+
+- a 'venv' directory with the latest PyMISP is activated
+- PyMISP is configured to create/update events on the instance
+- scripts/keys.py is configured
+
 #### Multiple targets
 If you plan to scan multiple targets, add the following argument: `http.max-cache-size=10000000`
 
